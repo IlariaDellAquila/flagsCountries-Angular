@@ -1,0 +1,23 @@
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 1px rgba(216, 208, 208, 0.219);
+}
+h4{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+#luna{
+    margin-right:10px;
+    margin-top: 20px;
+  width: 20px;
+  height: 20px;
+}
+#dark{
+  display: flex;
+  margin-right: 50px;
+}

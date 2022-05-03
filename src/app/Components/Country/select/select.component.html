@@ -1,0 +1,5 @@
+<select (change)="onChangeValue($event)" class="scritta" id="region" name="region">
+    <option value="" >{{defaultText}}</option>
+    <option *ngFor="let o of options " [value]="o.value">{{o?.text}}</option>
+
+</select>

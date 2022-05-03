@@ -1,0 +1,15 @@
+<app-header></app-header>
+<div id="parteAlta">
+    <app-input-search (testo)="intercetto($event)"></app-input-search>
+    <app-select [options]='options' [defaultText]="'Seleziona un continente'" (change)="changeRegion($event)" ></app-select>
+</div>
+<div *ngIf="loader" class="load">
+    <app-rotellina></app-rotellina>
+</div>
+<div *ngIf="!loader" id="grid">
+    <div class="card" *ngFor="let country of countries">
+        <app-country [c]='country' (eventoCustom)="loggaEvento($event)">
+
+        </app-country>
+    </div>
+</div>
